@@ -48,8 +48,8 @@ micro-consignment-getAll:
 	@micro shippy.service.consignment shippingService getConsignments
 
 go-mod-edit:
-	go mod edit -replace github.com/tullo/shippy/shippy-service-user=../shippy-service-user
-	go mod edit -replace github.com/tullo/shippy/shippy-service-vessel=../shippy-service-vessel
+	go mod edit -replace github.com/tullo/shippy-service-user=../shippy-service-user
+	go mod edit -replace github.com/tullo/shippy-service-vessel=../shippy-service-vessel
 
 curl-consignment-create:
 	curl http://localhost:8080/shippy.service.consignment/shippingService/createConsignment \

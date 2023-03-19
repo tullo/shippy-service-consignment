@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/micro/micro/v3/service/logger"
-	proto "github.com/tullo/shippy/shippy-service-consignment/proto"
+	proto "github.com/tullo/shippy-service-consignment/proto"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

@@ -11,9 +11,9 @@ import (
 	"github.com/micro/micro/v3/service/logger"
 	"github.com/micro/micro/v3/service/server"
 	"github.com/pkg/errors"
-	proto "github.com/tullo/shippy/shippy-service-consignment/proto"
-	userProto "github.com/tullo/shippy/shippy-service-user/proto"
-	vesselProto "github.com/tullo/shippy/shippy-service-vessel/proto"
+	proto "github.com/tullo/shippy-service-consignment/proto"
+	userProto "github.com/tullo/shippy-service-user/proto"
+	vesselProto "github.com/tullo/shippy-service-vessel/proto"
 )
 
 var authDisabled bool

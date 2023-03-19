@@ -6,8 +6,8 @@ import (
 	"github.com/micro/micro/v3/service/logger"
 	"github.com/pkg/errors"
 	"github.com/rs/xid"
-	proto "github.com/tullo/shippy/shippy-service-consignment/proto"
-	vesselProto "github.com/tullo/shippy/shippy-service-vessel/proto"
+	proto "github.com/tullo/shippy-service-consignment/proto"
+	vesselProto "github.com/tullo/shippy-service-vessel/proto"
 )
 
 var (

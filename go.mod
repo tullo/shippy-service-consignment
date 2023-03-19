@@ -1,6 +1,6 @@
-module github.com/tullo/shippy/shippy-service-consignment
+module github.com/tullo/shippy-service-consignment
 
-go 1.19
+go 1.20
 
 // replace github.com/tullo/shippy/shippy-service-vessel => ../shippy-service-vessel
 
@@ -9,8 +9,8 @@ require (
 	github.com/micro/micro/v3 v3.16.0
 	github.com/pkg/errors v0.9.1
 	github.com/rs/xid v1.4.0
-	github.com/tullo/shippy/shippy-service-user v0.0.0-20230318131614-8bc73ce8f6ea
-	github.com/tullo/shippy/shippy-service-vessel v0.0.0-20230318131614-8bc73ce8f6ea
+	github.com/tullo/shippy-service-user v0.0.0-20230319104003-db8f4fa58775
+	github.com/tullo/shippy-service-vessel v0.0.0-20230319105032-6ad948d3cdf4
 	go.mongodb.org/mongo-driver v1.11.3
 	google.golang.org/protobuf v1.30.0
 )
