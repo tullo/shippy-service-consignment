@@ -6,6 +6,7 @@ docker-image:
 docker-run:
 	@docker run -p 50051:50051 shippy-service-consignment
 
+# https://github.com/go-micro/generator
 grcp:
 	@echo '~ protoc OK'
 	@protoc --proto_path=. --go_out=. --micro_out=. proto/consignment.proto
