@@ -9,8 +9,8 @@ require (
 	github.com/micro/micro/v3 v3.19.0
 	github.com/pkg/errors v0.9.1
 	github.com/rs/xid v1.5.0
-	github.com/tullo/shippy-service-user v1.0.1
-	github.com/tullo/shippy-service-vessel v1.0.1
+	github.com/tullo/shippy-service-user v1.0.2
+	github.com/tullo/shippy-service-vessel v1.0.2
 	go.mongodb.org/mongo-driver v1.15.1
 	google.golang.org/protobuf v1.34.2
 )
