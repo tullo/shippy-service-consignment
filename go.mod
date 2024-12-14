@@ -5,7 +5,6 @@ go 1.22
 // replace github.com/tullo/shippy-service-vessel => ../shippy-service-vessel
 
 require (
-	github.com/golang/protobuf v1.5.4
 	github.com/micro/micro/v3 v3.19.0
 	github.com/pkg/errors v0.9.1
 	github.com/rs/xid v1.6.0
@@ -23,6 +22,7 @@ require (
 	github.com/go-acme/lego/v3 v3.9.0 // indirect
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
+	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/pprof v0.0.0-20240622144329-c177fd99eaa9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
