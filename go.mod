@@ -10,7 +10,7 @@ require (
 	github.com/rs/xid v1.6.0
 	github.com/tullo/shippy-service-user v1.0.2
 	github.com/tullo/shippy-service-vessel v1.0.2
-	go.mongodb.org/mongo-driver v1.17.1
+	go.mongodb.org/mongo-driver/v2 v2.0.0
 	google.golang.org/protobuf v1.35.2
 )
 
@@ -30,7 +30,6 @@ require (
 	github.com/hpcloud/tail v1.0.0 // indirect
 	github.com/klauspost/compress v1.17.9 // indirect
 	github.com/miekg/dns v1.1.61 // indirect
-	github.com/montanaflynn/stats v0.7.1 // indirect
 	github.com/nightlyone/lockfile v1.0.0 // indirect
 	github.com/onsi/ginkgo/v2 v2.19.0 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
