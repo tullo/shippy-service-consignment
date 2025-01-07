@@ -11,7 +11,7 @@ require (
 	github.com/tullo/shippy-service-user v1.0.2
 	github.com/tullo/shippy-service-vessel v1.0.2
 	go.mongodb.org/mongo-driver/v2 v2.0.0
-	google.golang.org/protobuf v1.36.1
+	google.golang.org/protobuf v1.36.2
 )
 
 require (
