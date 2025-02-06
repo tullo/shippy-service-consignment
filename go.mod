@@ -5,14 +5,13 @@ go 1.22
 // replace github.com/tullo/shippy-service-vessel => ../shippy-service-vessel
 
 require (
-	github.com/micro/micro/v5 v5.0.0
-	github.com/micro/micro/v5 v5.0.0
+	github.com/micro/micro/v3 v3.19.0
 	github.com/pkg/errors v0.9.1
 	github.com/rs/xid v1.6.0
 	github.com/tullo/shippy-service-user v1.0.2
 	github.com/tullo/shippy-service-vessel v1.0.2
 	go.mongodb.org/mongo-driver/v2 v2.0.0
-	google.golang.org/protobuf v1.36.4
+	google.golang.org/protobuf v1.36.5
 )
 
 require (
@@ -20,6 +19,7 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/evanphx/json-patch/v5 v5.9.0 // indirect
+	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/go-acme/lego/v3 v3.9.0 // indirect
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
