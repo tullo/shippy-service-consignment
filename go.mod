@@ -11,6 +11,7 @@ require (
 	github.com/micro/micro/v5 v5.0.0
 	github.com/pkg/errors v0.9.1
 	github.com/rs/xid v1.6.0
+	github.com/tullo/shippy-service-user v1.0.3
 	github.com/tullo/shippy-service-vessel v1.0.3
 	go.mongodb.org/mongo-driver/v2 v2.2.0
 	google.golang.org/protobuf v1.36.6
@@ -20,23 +21,30 @@ require (
 	github.com/bitly/go-simplejson v0.5.1 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.6 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/dgrijalva/jwt-go/v4 v4.0.0-preview1 // indirect
+	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/golang/snappy v1.0.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/hpcloud/tail v1.0.0 // indirect
+	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
 	github.com/jackc/pgx/v5 v5.7.4 // indirect
 	github.com/jackc/puddle/v2 v2.2.2 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
+	github.com/jmoiron/sqlx v1.4.0 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
+	github.com/lib/pq v1.10.9 // indirect
 	github.com/mattn/go-sqlite3 v1.14.27 // indirect
+	github.com/miekg/dns v1.1.43 // indirect
 	github.com/nightlyone/lockfile v1.0.0 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
 	github.com/stretchr/testify v1.10.0 // indirect
 	github.com/urfave/cli/v2 v2.27.6 // indirect
@@ -45,6 +53,7 @@ require (
 	github.com/xdg-go/stringprep v1.0.4 // indirect
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
+	go-micro.dev/v5 v5.3.0 // indirect
 	go.etcd.io/bbolt v1.4.0 // indirect
 	golang.org/x/crypto v0.37.0 // indirect
 	golang.org/x/net v0.39.0 // indirect

@@ -7,7 +7,6 @@ import (
 	"github.com/micro/micro/v5/service"
 	"github.com/micro/micro/v5/service/client"
 	"github.com/micro/micro/v5/service/config"
-	"github.com/micro/micro/v5/service/context/metadata"
 	"github.com/micro/micro/v5/service/logger"
 	"github.com/micro/micro/v5/service/server"
 	"github.com/pkg/errors"
@@ -64,11 +63,10 @@ func AuthWrapper(fn server.HandlerFunc) server.HandlerFunc {
 		}
 		logger.Info("===== WRAPPER =====")
 
-		meta, ok := metadata.FromContext(ctx)
+		token, ok := ctx.Value("token").(string)
 		if !ok {
 			return errors.New("no auth meta-data found in request")
 		}
-		token := meta["Token"]
 		log.Println("Authenticating with token: ", token)
 
 		// Auth here
