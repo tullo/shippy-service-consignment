@@ -1,0 +1,322 @@
+{
+  "components": {
+    "requestBodies": {
+      "ShippingServiceCreateConsignmentRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Consignment"
+            }
+          }
+        },
+        "description": "ShippingServiceCreateConsignmentRequest"
+      },
+      "ShippingServiceGetConsignmentsRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/GetRequest"
+            }
+          }
+        },
+        "description": "ShippingServiceGetConsignmentsRequest"
+      }
+    },
+    "responses": {
+      "MicroAPIError": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "Code": {
+                  "description": "Error code",
+                  "example": 500,
+                  "type": "number"
+                },
+                "Detail": {
+                  "description": "Error detail",
+                  "example": "service not found",
+                  "type": "string"
+                },
+                "Id": {
+                  "description": "Error ID",
+                  "type": "string"
+                },
+                "Status": {
+                  "description": "Error status message",
+                  "example": "Internal Server Error",
+                  "type": "string"
+                }
+              },
+              "title": "MicroAPIError",
+              "type": "object"
+            }
+          }
+        },
+        "description": "Error from the Micro API"
+      },
+      "ShippingServiceCreateConsignmentResponse": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Response"
+            }
+          }
+        },
+        "description": "ShippingServiceCreateConsignmentResponse"
+      },
+      "ShippingServiceGetConsignmentsResponse": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Response"
+            }
+          }
+        },
+        "description": "ShippingServiceGetConsignmentsResponse"
+      }
+    },
+    "schemas": {
+      "Consignment": {
+        "properties": {
+          "containers": {
+            "items": {
+              "properties": {
+                "customerId": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "origin": {
+                  "type": "string"
+                },
+                "userId": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "description": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "vesselId": {
+            "type": "string"
+          },
+          "weight": {
+            "format": "int32",
+            "type": "number"
+          }
+        },
+        "title": "Consignment",
+        "type": "object"
+      },
+      "Container": {
+        "properties": {
+          "customerId": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "userId": {
+            "type": "string"
+          }
+        },
+        "title": "Container",
+        "type": "object"
+      },
+      "GetRequest": {
+        "title": "GetRequest",
+        "type": "object"
+      },
+      "Response": {
+        "properties": {
+          "consignment": {
+            "properties": {
+              "containers": {
+                "items": {
+                  "properties": {
+                    "customerId": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "origin": {
+                      "type": "string"
+                    },
+                    "userId": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "description": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "vesselId": {
+                "type": "string"
+              },
+              "weight": {
+                "format": "int32",
+                "type": "number"
+              }
+            },
+            "type": "object"
+          },
+          "consignments": {
+            "items": {
+              "properties": {
+                "containers": {
+                  "items": {
+                    "properties": {
+                      "customerId": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "origin": {
+                        "type": "string"
+                      },
+                      "userId": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "vesselId": {
+                  "type": "string"
+                },
+                "weight": {
+                  "format": "int32",
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "created": {
+            "type": "boolean"
+          }
+        },
+        "title": "Response",
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "MicroAPIToken": {
+        "bearerFormat": "JWT",
+        "description": "Micro API token",
+        "scheme": "bearer",
+        "type": "http"
+      }
+    }
+  },
+  "info": {
+    "description": "Generated by protoc-gen-openapi",
+    "title": "Consignment",
+    "version": "1",
+    "x-logo": {
+      "altText": "Micro logo",
+      "backgroundColor": "#FFFFFF",
+      "url": "https://micro.dev/images/brand.png"
+    }
+  },
+  "openapi": "3.0.0",
+  "paths": {
+    "/consignment/ShippingService/CreateConsignment": {
+      "parameters": [
+        {
+          "in": "header",
+          "name": "Micro-Namespace",
+          "required": true,
+          "schema": {
+            "default": "micro",
+            "type": "string"
+          }
+        }
+      ],
+      "post": {
+        "requestBody": {
+          "$ref": "#/components/requestBodies/ShippingServiceCreateConsignmentRequest"
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShippingServiceCreateConsignmentResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/MicroAPIError"
+          }
+        },
+        "security": [
+          {
+            "MicroAPIToken": []
+          }
+        ],
+        "summary": "ShippingService.CreateConsignment(Consignment)"
+      }
+    },
+    "/consignment/ShippingService/GetConsignments": {
+      "parameters": [
+        {
+          "in": "header",
+          "name": "Micro-Namespace",
+          "required": true,
+          "schema": {
+            "default": "micro",
+            "type": "string"
+          }
+        }
+      ],
+      "post": {
+        "requestBody": {
+          "$ref": "#/components/requestBodies/ShippingServiceGetConsignmentsRequest"
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShippingServiceGetConsignmentsResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/MicroAPIError"
+          }
+        },
+        "security": [
+          {
+            "MicroAPIToken": []
+          }
+        ],
+        "summary": "ShippingService.GetConsignments(GetRequest)"
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Micro dev environment"
+    }
+  ]
+}

@@ -13,9 +13,15 @@ docker-run:
 	@docker run -p 50051:50051 shippy-service-consignment
 
 # https://github.com/go-micro/generator
+.PHONY: grcp
 grcp:
 	@echo '~ protoc OK'
 	@protoc --proto_path=. --go_out=. --micro_out=. proto/consignment.proto
+
+.PHONY: api
+api:
+	@echo '~ protoc OK'
+	@protoc --proto_path=. --openapi_out=. proto/consignment.proto
 
 micro-log:
 	@micro logs -f shippy-service-consignment
