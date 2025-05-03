@@ -7,7 +7,7 @@ toolchain go1.24.2
 // replace github.com/tullo/shippy-service-vessel => ../shippy-service-vessel
 
 require (
-	github.com/micro/micro/v5 v5.3.0
+	github.com/micro/micro/v5 v5.5.0
 	github.com/pkg/errors v0.9.1
 	github.com/rs/xid v1.6.0
 	github.com/tullo/shippy-service-user v1.0.3
