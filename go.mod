@@ -12,7 +12,7 @@ require (
 	github.com/rs/xid v1.6.0
 	github.com/tullo/shippy-service-user v1.0.3
 	github.com/tullo/shippy-service-vessel v1.0.3
-	go.mongodb.org/mongo-driver/v2 v2.4.0
+	go.mongodb.org/mongo-driver/v2 v2.4.1
 	google.golang.org/protobuf v1.36.10
 )
 
